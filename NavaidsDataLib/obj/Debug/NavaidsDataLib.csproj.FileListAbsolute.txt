@@ -1,0 +1,15 @@
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\NavaidsDataLib\NavaidsDataLib\bin\Debug\NavaidsDataLib.dll
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\NavaidsDataLib\NavaidsDataLib\bin\Debug\NavaidsDataLib.pdb
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\NavaidsDataLib\NavaidsDataLib\obj\Debug\NavaidsDataLib.csprojResolveAssemblyReference.cache
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\NavaidsDataLib\NavaidsDataLib\obj\Debug\NavaidsDataLib.dll
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\NavaidsDataLib\NavaidsDataLib\obj\Debug\NavaidsDataLib.pdb
+C:\Users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\NavaidsDataLib\bin\Debug\NavaidsDataLib.dll
+C:\Users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\NavaidsDataLib\bin\Debug\NavaidsDataLib.pdb
+C:\Users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\NavaidsDataLib\obj\Debug\NavaidsDataLib.dll
+C:\Users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\NavaidsDataLib\obj\Debug\NavaidsDataLib.pdb
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\NavaidsDataLib\bin\Debug\NavaidsDataLib.dll
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\NavaidsDataLib\bin\Debug\NavaidsDataLib.pdb
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\NavaidsDataLib\obj\Debug\NavaidsDataLib.csprojResolveAssemblyReference.cache
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\NavaidsDataLib\obj\Debug\NavaidsDataLib.dll
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\NavaidsDataLib\obj\Debug\NavaidsDataLib.pdb
+C:\Users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\NavaidsDataLib\obj\Debug\NavaidsDataLib.csprojResolveAssemblyReference.cache

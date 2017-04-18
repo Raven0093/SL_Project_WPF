@@ -1,0 +1,41 @@
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\bin\Debug\SL_Project_WPF.exe.config
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.csprojResolveAssemblyReference.cache
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\App.g.cs
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF_MarkupCompile.cache
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\bin\Debug\SL_Project_WPF.exe
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\bin\Debug\SL_Project_WPF.pdb
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\MainWindow.g.cs
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF_MarkupCompile.lref
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\MainWindow.baml
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.g.resources
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.Properties.Resources.resources
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.csproj.GenerateResource.Cache
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.exe
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.pdb
+c:\users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\bin\Debug\Microsoft.FlightSimulator.SimConnect.dll
+C:\Users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\bin\Debug\NavaidsDataLib.dll
+C:\Users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\bin\Debug\NavaidsDataLib.pdb
+C:\Users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\dariu\OneDrive\Dokumenty\Visual Studio 2015\Projects\SL_Project_WPF\SL_Project_WPF\obj\Debug\App.baml
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\bin\Debug\SL_Project_WPF.exe.config
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.exe
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.pdb
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\bin\Debug\SL_Project_WPF.exe
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\bin\Debug\SL_Project_WPF.pdb
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\bin\Debug\Microsoft.FlightSimulator.SimConnect.dll
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\bin\Debug\NavaidsDataLib.dll
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\bin\Debug\NavaidsDataLib.pdb
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.csprojResolveAssemblyReference.cache
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\App.g.cs
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF_MarkupCompile.cache
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF_MarkupCompile.lref
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\App.baml
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\MainWindow.baml
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.g.resources
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.Properties.Resources.resources
+C:\Users\szygula100\Desktop\SL_Project_WPF\SL_Project_WPF\SL_Project_WPF\obj\Debug\SL_Project_WPF.csproj.GenerateResource.Cache

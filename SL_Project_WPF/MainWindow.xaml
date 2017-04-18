@@ -1,0 +1,159 @@
+﻿<Window x:Class="SL_Project_WPF.MainWindow"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SL_Project_WPF"
+        xmlns:bmap="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+
+        mc:Ignorable="d"
+        x:Name="mainWindow"
+        Title="FSX_Tracer" Height="800" Width="640">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="480*"/>
+            <ColumnDefinition Width="180*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="550*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="120*"/>
+            </Grid.RowDefinitions>
+
+
+
+            <Grid Grid.Row="0">
+                <bmap:Map x:Name="myMap" CredentialsProvider="AsfQQ9JwTbSTistpoxj5ahNtFut1osjKUEWDyv9KVuIpkqm9u5pzQEdwgUb3RSbJ" Mode="Aerial"/>
+            </Grid>
+
+
+            <Grid Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Longitude [degrees]:"/>
+                    <TextBox Text="{Binding DataContext.UserLat, ElementName=mainWindow, Mode=TwoWay}" Width="60"/>
+                    <Label Content="Latitude [degrees]:"/>
+                    <TextBox Text="{Binding DataContext.UserLng, ElementName=mainWindow, Mode=TwoWay}" Width="60"/>
+                    <Button Command="{Binding DataContext.SetLatLonCommand, ElementName=mainWindow}" Content="Set coords"></Button>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Altitude [km]:"/>
+                    <TextBox Text="{Binding DataContext.UserAltitude, ElementName=mainWindow, Mode=TwoWay}" Width="60"/>
+                    <Button Command="{Binding DataContext.SetAltitudeCommand, ElementName=mainWindow}" Content="Set altitude"></Button>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="3">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <StackPanel Orientation="Vertical">
+                        <Button Command="{Binding DataContext.AutoMapCenterCommand, ElementName=mainWindow}" Content="Center map on plane" Margin="5">
+                            <Button.CommandParameter>
+                                <sys:Boolean >True</sys:Boolean>
+                            </Button.CommandParameter>
+                        </Button>
+
+                        <Button Command="{Binding DataContext.ResetMapZoomCommand, ElementName=mainWindow}" Content="Reset zoom settings" Margin="5"></Button>
+
+                        <Button Command="{Binding DataContext.ConnectToSimconnectCommand, ElementName=mainWindow}" Content="Simconnect: Connect" Visibility="{Binding DataContext.SimconnectConnectionState, ElementName=mainWindow, Converter={StaticResource ConnectionStateToVisibilityConverter}}" Margin="5"></Button>
+
+                        <Button Command="{Binding DataContext.DisconnectFromSimconnectCommand, ElementName=mainWindow}" Content="Simconnect: Disconnect" Visibility="{Binding DataContext.SimconnectConnectionState, ElementName=mainWindow, Converter={StaticResource InvertedConnectionStateToVisibilityConverter}}" Margin="5"></Button>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <StackPanel Orientation="Vertical">
+
+                        <Label Content="Plane Longitude [degrees]:"/>
+                        <TextBlock Text="{Binding DataContext.PlaneVM.Longitude, ElementName=mainWindow, StringFormat=N5, Mode=OneWay}"/>
+
+                        <Label Content="Plane Latitude [degrees]:"/>
+                        <TextBlock Text="{Binding DataContext.PlaneVM.Latitude, ElementName=mainWindow, StringFormat=N5, Mode=OneWay}"/>
+
+                        <Label Content="Plane Altitude [km]:"/>
+                        <TextBlock Text="{Binding DataContext.PlaneVM.Altitude, ElementName=mainWindow, StringFormat=N5, Mode=OneWay}"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Plane Airspeed [knots]:"/>
+                        <TextBlock Text="{Binding DataContext.PlaneVM.Airspeed, ElementName=mainWindow, StringFormat=N2, Mode=OneWay}"/>
+
+                        <Label Content="Plane VerticalSpeed [ft/min]:"/>
+                        <TextBlock Text="{Binding DataContext.PlaneVM.VerticalSpeed, ElementName=mainWindow, StringFormat=N2, Mode=OneWay}"/>
+
+                        <Label Content="Plane GroundSpeed [m/s]:"/>
+                        <TextBlock Text="{Binding DataContext.PlaneVM.GroundSpeed, ElementName=mainWindow, StringFormat=N2, Mode=OneWay}"/>
+
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Max distance to navaids[km]:"/>
+                    <ComboBox ItemsSource="{Binding DataContext.DistanceKmValueList, ElementName=mainWindow}" SelectedItem="{Binding DataContext.SelectedDistanceKmValueList, ElementName=mainWindow, Mode=TwoWay}" Margin="5"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid  Visibility="{Binding DataContext.NavaidsSettings, ElementName=mainWindow, Converter={StaticResource InvertedNavaidSettingsToVisibilityConverter}}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Label Content="Navaids:"/>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <ScrollViewer>
+                            <TextBlock Text="{Binding DataContext.NavaidsText, ElementName=mainWindow, StringFormat=N2, Mode=OneWay}" HorizontalAlignment="Stretch"  />
+                        </ScrollViewer>
+                    </Grid>
+                </Grid>
+
+                <Grid  Visibility="{Binding DataContext.NavaidsSettings, ElementName=mainWindow, Converter={StaticResource NavaidSettingsToVisibilityConverter}}">
+                    <StackPanel Orientation="Vertical">
+                        <CheckBox Content="{Binding DataContext.NavaidSettings.StringVor_dme, ElementName=mainWindow}" IsChecked="{Binding DataContext.NavaidSettings.BoolVor_dme, ElementName=mainWindow}"></CheckBox>
+                        <CheckBox Content="{Binding DataContext.NavaidSettings.StringNdb, ElementName=mainWindow}" IsChecked="{Binding DataContext.NavaidSettings.BoolNdb, ElementName=mainWindow}"></CheckBox>
+                        <CheckBox Content="{Binding DataContext.NavaidSettings.StringDme, ElementName=mainWindow}" IsChecked="{Binding DataContext.NavaidSettings.BoolDme, ElementName=mainWindow}"></CheckBox>
+                        <CheckBox Content="{Binding DataContext.NavaidSettings.StringVor, ElementName=mainWindow}" IsChecked="{Binding DataContext.NavaidSettings.BoolVor, ElementName=mainWindow}"></CheckBox>
+                        <CheckBox Content="{Binding DataContext.NavaidSettings.StringVortac, ElementName=mainWindow}" IsChecked="{Binding DataContext.NavaidSettings.BoolVortac, ElementName=mainWindow}"></CheckBox>
+                        <CheckBox Content="{Binding DataContext.NavaidSettings.StringNdb_dme, ElementName=mainWindow}" IsChecked="{Binding DataContext.NavaidSettings.BoolNdb_dme, ElementName=mainWindow}"></CheckBox>
+                        <CheckBox Content="{Binding DataContext.NavaidSettings.StringTacan, ElementName=mainWindow}" IsChecked="{Binding DataContext.NavaidSettings.BoolTacan, ElementName=mainWindow}"></CheckBox>
+
+                        <Button Command="{Binding DataContext.UpdateNavaidsFilesCommand, ElementName=mainWindow}" Content="UpdateNavaidsFiles" ></Button>
+
+                       
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Navaids data:"/>
+                            <TextBlock Text="{Binding DataContext.NavaidsDataLoad, ElementName=mainWindow, StringFormat=N2, Mode=OneWay}"/>
+                        </StackPanel>
+                    </StackPanel>
+                    
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Button Command="{Binding DataContext.ChangeSettingsViewCommand, ElementName=mainWindow}" Content="Settings" ></Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

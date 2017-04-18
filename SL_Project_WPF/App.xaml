@@ -1,0 +1,13 @@
+﻿<Application x:Class="SL_Project_WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SL_Project_WPF"
+             xmlns:converters="clr-namespace:SL_Project_WPF.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <converters:ConnectionStateToVisibilityConverter x:Key="ConnectionStateToVisibilityConverter"></converters:ConnectionStateToVisibilityConverter>
+        <converters:InvertedConnectionStateToVisibilityConverter x:Key="InvertedConnectionStateToVisibilityConverter"></converters:InvertedConnectionStateToVisibilityConverter>
+        <converters:InvertedNavaidSettingsToVisibilityConverter x:Key="InvertedNavaidSettingsToVisibilityConverter"></converters:InvertedNavaidSettingsToVisibilityConverter>
+        <converters:NavaidSettingsToVisibilityConverter x:Key="NavaidSettingsToVisibilityConverter"></converters:NavaidSettingsToVisibilityConverter>
+    </Application.Resources>
+</Application>
